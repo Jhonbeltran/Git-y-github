@@ -1,0 +1,14 @@
+Shell Scripts: serie de comandos encapsulados dentro de un archivo .sh
+los cuales se ejecutan uno por uno, generando salidas como esta:
+
+➜  shell_scripts ls
+encapsulados.sh
+➜  shell_scripts sh encapsulados.sh
+Initialized empty Git repository in /media/jhon/Disco local/Estudio/Git y Github/shell_scripts/.git/
+[master (root-commit) f3790d8] Archivo inicial
+ 2 files changed, 6 insertions(+)
+ create mode 100644 README.txt
+ create mode 100644 encapsulados.sh
+On branch master
+nothing to commit, working directory clean
+➜  shell_scripts git:(master) 

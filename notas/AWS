@@ -1,0 +1,64 @@
+						*Amazon Web Services*
+
+|||||||||||||||||Funciona bajo el de CloudComputing |||||||||||||||
+| Funciona bajo terminos de escalabilidad =! hosting paga mensual |
+
+AWS se va a adaptar a las necesidades que vayamos teniendo.
+
+Si en un hosting normal sobrepasamos la capacidad debemos pagar mas
+(se puede caer el server)
+
+AWS funciona bajo un termino de 
+elasticidad>> Si el proyecto crece mucho el va creciendo con nosotros.
+*Pagamos de acuerdo al consumo(existen modulos free)
+Hay version español e ingles
+
+Podemos configurar usuarios en Security and Identity
+
+			||||||||||||EC2|||||||||||||||
+			|Virtual Servers in the Cloud|
+			||||||||||||||||||||||||||||||
+
+			
+Generas un servidor virutal, el cual podemos separar en instancias
+antes de hacer instancias debemos generar grupos de seguridad|||||
+por que puertos se va acceder|||||||||||||||||||||||||||||||||||||
+
+
+||||dentro de network and security vamos a encontrar las key pairs en donde
+vamos a generar llaves publicas y privadas para conectarnos con nuestra|||| 
+area local o con nuestro repo en github a la hora de querer hacer el deploy
+esto nos genera archivos .pem que corremos por terminal y debemos indicarle
+que ip se va a conectar
+
+Load Balancers: ayuda a gestionar el trafico.
+
+instancias: carpetas, assets 
+
+LEVANTAR UNA INSTANCIA
+*crear llave par
+para que nosotros solo podamos leer la llave .pem usamos el comando
+
+$ chmod 0400 ejemplo.pem
+
+*crear grupos de seguridad(debemos darle acceso al grupo por ssh)
+
+*creamos el load-balancer
+
+*creamos la instancia
+
+Esto lo ejecutamos en un servidor Amazon Linux
+*******************************************************************
+#! /bin/bash -existen
+yum update -y
+yum groupinstall -y "Web Server" "MySQL Database" "PHP Suport"
+service httpd start
+chkconfig httpd on
+********************************************************************
+
+La forma de conectarnos con el server via ssh es de dos formas:
+
+$ ssh -i Downloads/nombredelallave.pem 52.10.84.32 -l ec2-user
+52.10.84.32 llave publica
+
+$ 
