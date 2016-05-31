@@ -1,2 +1,0 @@
-FTP es una forma de subir archivos a un servidor pero es una transaccion, no posee un registro que 
-nos ayude a gestionar, pone en peligro nuestros proyectos web
