@@ -189,3 +189,5 @@ git log -S"git" /para ver en que commit se generaron estos cambios
 git tag //Es un commit abanderado
 
 git revase // es para hacer que la rama quede delante del master
+
+git diff 1..2 //Usado para comparar commits
